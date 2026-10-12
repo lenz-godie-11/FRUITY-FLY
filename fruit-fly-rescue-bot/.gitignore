@@ -1,0 +1,20 @@
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/raw/
+data/processed/
+runs/
+.DS_Store
+.mplconfig/
+
+# Generated cinematic assets; keep scripts, documentation, and provenance.
+cinematic/**/frames/
+cinematic/**/*.mp4
+cinematic/**/*.wav
+cinematic/**/*.blend
+cinematic/**/*.blend[0-9]*
+cinematic/**/*.npz
+cinematic/**/preview_*.png
+cinematic/**/cover.png

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "path_boundaries_checked": 43,
+  "activity_states_checked": 42,
+  "obstacles": 16,
+  "visible_somas": 15619,
+  "frame_count": 960,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "seconds": 40,
+  "fly_relative_scale": 0.28,
+  "pickup_frame": 748,
+  "arrival_frame": 888,
+  "note": "Recorded mission, cinematic flight and chase camera. Presentation timing slowed; policy unchanged."
+}

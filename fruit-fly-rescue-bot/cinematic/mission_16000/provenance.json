@@ -1,0 +1,25 @@
+{
+  "replay": "runs/mission_16000/demo_success/replay.json",
+  "replay_sha256": "fe8650c7f1715151215a4a9b8d7c6831d907b0ace9373ecbaffd254f0359d33e",
+  "graph_sha256": "912dfd2a6b7d44553f50d77f04d4af310861420f65ad6621d1a57fa9ea05cdbf",
+  "neurons": 16000,
+  "positioned_neurons": 15619,
+  "missing_positions_omitted": 381,
+  "seed": 200089,
+  "decisions": 42,
+  "pickup_step": 35,
+  "success": true,
+  "activity_mapping": "Recorded signed activity; cyan positive / amber negative; magnitude log1p(100*abs(a))/log(101), fixed global scale.",
+  "staging": "XY path and 16 obstacle footprints from the mission. Flight height, wings, fly size, ruins, camera, dust, and light are presentation only.",
+  "brain_shell": "Convex envelope of measured soma positions, not a segmented anatomical surface.",
+  "blender_version": "5.2.0 LTS",
+  "fps": 24,
+  "frames": 600,
+  "duration_seconds": 25,
+  "frame_size": [
+    1920,
+    1080
+  ],
+  "activity_emission_strength": 4.2,
+  "scene_exposure": -0.55
+}

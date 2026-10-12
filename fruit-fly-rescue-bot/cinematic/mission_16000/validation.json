@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_path_boundaries": 43,
+  "checked_activity_states": 42,
+  "mission_obstacles": 16,
+  "positioned_neurons": 15619,
+  "render_frames": 600,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "note": "Final arrival holds the last recorded neural decision. Flight height and wing movement are cinematic."
+}

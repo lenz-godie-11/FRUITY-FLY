@@ -1,0 +1,18 @@
+{
+  "decoded_frames": 960,
+  "decoded_seconds": 40.0,
+  "video": "afterlight_chase.mp4",
+  "silent_video": "afterlight_chase_silent.mp4",
+  "seconds": 40,
+  "fps": 24,
+  "frames": 960,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "video_codec": "H.264 / yuv420p",
+  "audio": "Original synthesized stereo atmosphere / AAC",
+  "sha256": "b5c9c1d67b37b811b9a25a5411d81ecbcd1660794d7f3314ba8f0091aefe8187",
+  "bytes": 66869561,
+  "full_decode_check": "passed"
+}

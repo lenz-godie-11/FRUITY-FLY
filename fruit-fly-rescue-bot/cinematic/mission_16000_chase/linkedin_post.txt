@@ -1,0 +1,34 @@
+16,000 neurons. 3.74 million connections. A rescue controller trained on my Mac.
+
+I built a navigation controller using a selected subset of measured fruit-fly wiring from MaleCNS v1.0, then visualized one of its successful missions in Blender.
+
+The task: search for a hidden beacon, collect it, and return to the departure point.
+
+What is inside the model?
+
+• 16,000 neurons: computational units corresponding to identified neurons in the dataset. This is a selected subnetwork of the connectome—the map of neural wiring.
+• 3,736,859 directed connections: distinct source-to-target neuron pairs. A→B and B→A are separate connections.
+• 27,441,238 synaptic contacts: the dataset's contact counts across those pairs, aggregated into connection weights. Multiple contacts can contribute to one connection.
+
+The controller uses a recurrent rate model: each neuron has a continuous activity value. Learning adjusts gains on the measured connections while retaining their topology and assigned signs, alongside learned input encoders and action readouts.
+
+Of the 1,534 input neurons, 100 hold a learned home encoding, 100 retain visited-place information, and 1,334 encode observations. These memory mechanisms are engineered. Signals pass through the measured graph to 772 descending-neuron readouts that produce four movement choices.
+
+Training combined teacher demonstrations with DAgger: collecting states visited by the learner and adding teacher-labelled corrective examples. I ran 6,800 optimizer updates locally using PyTorch's Metal/MPS backend on an M4 Pro Mac with 24 GB RAM. The training loop took about 26.5 minutes, excluding initial demonstration generation.
+
+The environment contains a 7×7 grid, 16 obstacles, and a 192-move budget. The controller knows the obstacle map and its current cell; the beacon is detectable only locally. After departure, the base location must be retained in memory. A legal-action mask prevents wall moves.
+
+On 128 unseen missions:
+• 96 collected the beacon: 75%.
+• 39 also returned to base: 30.5%.
+
+Finding the beacon is currently more reliable than completing the return journey.
+
+The video shows a selected successful 42-move replay. Its route and neural activity come from the recorded controller. Flight, ruins, and camera movement are cinematic staging of a grid-navigation experiment.
+
+The brain inset shows simulated activity at 15,619 measured neuron positions; 381 neurons lack coordinates. It visualizes this engineered model's activity, rather than biological recordings.
+
+Data credit: MaleCNS v1.0—HHMI Janelia FlyEM, Cambridge, MRC LMB, Google Research and collaborators. CC BY 4.0.
+https://male-cns.janelia.org/download/
+
+#Connectomics #MachineLearning #ComputationalNeuroscience #Blender

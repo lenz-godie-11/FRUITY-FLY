@@ -1,0 +1,18 @@
+{
+  "decoded_frames": 600,
+  "decoded_seconds": 25.0,
+  "video": "afterlight.mp4",
+  "silent_video": "afterlight_silent.mp4",
+  "seconds": 25,
+  "fps": 24,
+  "frames": 600,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "video_codec": "H.264 / yuv420p",
+  "audio": "Original synthesized stereo atmosphere / AAC",
+  "sha256": "0da4dc295112dbc391b84f0acbc644e1b5bfa9b56aebec0852bae04932bd8723",
+  "bytes": 27178302,
+  "full_decode_check": "passed"
+}
